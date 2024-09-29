@@ -1,10 +1,3 @@
-This is my first program that is pushed to Github
+This is my sample and testing repository.
 
-
-1
-2
-3
-4
-5
-6
-
+To show animation, effect,,, I update the sample image here.
