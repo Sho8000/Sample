@@ -1,3 +1,7 @@
+.FlingBnn{
+  width: 50px;
+}
+
 .Buttyake{
   width: 30%;
 }
@@ -10,4 +14,30 @@
 .Buttyake3{
   width: 30%;
   transform: scale(0);
+}
+
+.slideAnimation{
+  margin-top: 20%;
+  width: 100%;
+  height: 200vh;
+  .imgContents{
+    text-align: center;
+    height: 50px;
+    img{max-height: 100%;}
+  }
+  .slideAnimationComment{
+    width: 70%;
+    height: 0;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    overflow: hidden;
+    background-color: rgba(255, 192, 203, 0.395);
+    h2{
+      font-size: 36px;
+    }
+    p{
+      font-size: 28px;
+    }
+  }
 }

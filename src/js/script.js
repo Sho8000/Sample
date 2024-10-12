@@ -9,6 +9,7 @@ $(() => {
   var tl6 = gsap.timeline();
   var tl7 = gsap.timeline();
   var tl8 = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger);
 
   tl1.to(".banana1",{
     scale: 2,
@@ -67,4 +68,15 @@ $(() => {
     stagger:0.5,
   })  
 
+  gsap.utils.toArray(".slideAnimationComment").forEach(target => {
+    gsap.to(target,
+      {
+        scrollTrigger: {
+          toggleActions: "play none none reverse",
+          trigger: ".imgContents",
+          start: "bottom center",
+        },
+        height: 800,
+      });
+  })
 })
