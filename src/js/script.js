@@ -6,6 +6,9 @@ $(() => {
   var tl3 = gsap.timeline();
   var tl4 = gsap.timeline();
   var tl5 = gsap.timeline();
+  var tl6 = gsap.timeline();
+  var tl7 = gsap.timeline();
+  var tl8 = gsap.timeline();
 
   tl1.to(".banana1",{
     scale: 2,
@@ -42,4 +45,26 @@ $(() => {
     ease: "power1.inOut",
     yoyo: true,
   })
+
+  tl6.set(".Buttyake",{rotation:-5})
+  tl6.to(".Buttyake", 0.01, {
+    rotation: 0,
+    repeat: 100,
+    ease: "power1.inOut",
+    yoyo: true,
+  })
+
+  tl7.to(".Buttyake2",{
+    opacity:1,
+    duration: 2,
+    ease: "power1.inOut",
+    yoyo: true,
+  })
+
+  tl8.to(".Buttyake3",{
+    scale: 1,
+    duration: 0.5,
+    stagger:0.5,
+  })  
+
 })
